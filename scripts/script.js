@@ -6,7 +6,7 @@
 
 // https://jsbin.com/ceperucelo/edit?output
 
-// [{},{},{}...]
+// [{},{},{}...
 const notificationObject = {
     id: 1,
     title: "String",

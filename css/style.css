@@ -12,6 +12,20 @@ body {
     font-size: 20px;
 }
 
+.main {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.contForForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
 form {
     width: 300px;
     border: 1px solid black;
@@ -21,7 +35,7 @@ form {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     gap: 15px;
 }
 
@@ -35,18 +49,80 @@ input {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     gap: 15px;
 }
 
 button {
     padding: 6px;
     border-radius: 5px;
-    background-color: rgb(54, 138, 138);
-    color: white;
+    background-color: #859647;
+    color: black;
     font-size: 16px;
 }
 
+.paidBtn,
+.sentBtn,
+.recievedBtn {
+    background-color: #d5b67b;
+}
+
+
+.errorBtn {
+    background-color: #c7615b;
+}
+
+
 .hidden {
     display: none;
+}
+
+.notificationAllContainer {
+    width: 300px;
+    height: 100%;
+    /* border: 2px solid green; */
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.contOneNotif {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    border-radius: 8px;
+    background-color: #b3d7b3;
+}
+
+.notifInfo {
+
+    padding: 10px;
+
+    h4 {
+        padding-bottom: 10px;
+    }
+}
+
+.delNotif {
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+}
+
+/* Notifications - type */
+.Success {
+    background-color: #859647;
+}
+
+.Info {
+    background-color: #d5b67b;
+}
+
+.Error {
+    background-color: #c7615b;
 }

@@ -11,20 +11,25 @@
 </head>
 
 <body>
-    <form>
-        <h2>Create order</h2>
-        <input type="text" placeholder="Address" required />
-        <input type="text" placeholder="Price" required />
-        <input type="text" placeholder="Reciever" required />
-        <button type="submit">Create</button>
-    </form>
-    <div class="orderButtons hidden">
-        <button class="paidBtn">Paid</button>
-        <button class="sentBtn">Sent</button>
-        <button class="recievedBtn">Recieved</button>
-    </div>
-    <div class="notificationContainer">
+    <div class="main">
+        <div class="contForForm">
+            <form class="orderForm">
+                <h2>Create order</h2>
+                <input type="text" placeholder="Address" required value="Alice" />
+                <input type="text" placeholder="Price" required value="432" />
+                <input type="text" placeholder="Reciever" required value="dfgdgdfgdfg" />
+                <button type="submit">Создать заказ</button>
+            </form>
+            <div class="orderButtons hidden">
+                <button class="paidBtn">Заказ оплачен</button>
+                <button class="sentBtn">Заказ отправлен</button>
+                <button class="recievedBtn">Заказ получен</button>
+                <button class="errorBtn">Проблема</button>
+            </div>
+        </div>
+        <div class="notificationAllContainer">
 
+        </div>
     </div>
 </body>
 <script src="/scripts/script.js"></script>

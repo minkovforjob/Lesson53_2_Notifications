@@ -41,7 +41,7 @@ class Notificatios {
         Notificatios.total++;
     }
 
-
+    // удаление сообщения
     static delNotif(idNotif) {
         console.log("idNotif = " + idNotif);
         let ind = -1;
@@ -93,6 +93,8 @@ class Notificatios {
     static deleteNotificatios(id) { };
 }
 
+
+// обработка кнопок
 orderForm.addEventListener("submit", (event) => {
     event.preventDefault(); // предотвратить дефолтное поведение 
     orderButtons.classList.remove("hidden");
